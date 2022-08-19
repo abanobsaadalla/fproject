@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <h3 class="text-center my-4"> Crud Operation </h3>
+
+  <div class="w-50 px-4">
+    <form action="" class="form-group">
+      <div class="my-3">
+        <label for="name"> Name </label>
+        <input id="name" type="text" class="form-control w-100" placeholder="type your name">
+      </div>
+      <div class="my-3">
+        <label for="mail"> Email </label>
+        <input id="mail" type="email" class="form-control w-100" placeholder="type your Email">
+      </div>
+      <div class="my-3">
+        <label for="phone"> Phone </label>
+        <input id="phone" type="tel" class="form-control w-100" placeholder="type your Phone">
+      </div>
+      <div class="my-3">
+        <label for="age"> Age </label>
+        <input id="age" type="number" class="form-control w-100" placeholder="type your Age">
+      </div>
+   
+       <button type="button" onclick="getData()" id="addCard" class="btn btn-block btn-primary"> Add Card </button>
+
+    </form>
+  </div>
+<h1> Crud System</h1>
+  <div class="w-50 mt-5">
+    <div class="d-flex">
+      <table class="table table-hoverd">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>email </th>
+            <th> phone </th>
+            <th> age</th>
+          </tr>
+        </thead>
+        <tbody id="displayData">
+  
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
